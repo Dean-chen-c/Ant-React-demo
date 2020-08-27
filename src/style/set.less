@@ -1,0 +1,36 @@
+@color-text-a: #161a2a;
+@url: '../../assets/images';
+// 清除浮动
+.clearfix {
+  *zoom: 1;
+
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+// 多行省略
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.border-box {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.vertival {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-lr;
+  writing-mode: tb-rl;
+}
+//color font-size-line-height
+.cl-fs-linh(@color: #444, @fontsize: 14px, @linh: 1.5) {
+  font-size: @fontsize;
+  color: @color;
+  line-height: @linh;
+}

@@ -1,0 +1,228 @@
+// @import url(//at.alicdn.com/t/font_1983852_hjpwqv4z1cm.css);
+@import '~antd/dist/antd.less';
+@import './style/layout.less';
+@import './style/set.less';
+body {
+  background-color: #f0f2f5;
+}
+.app {
+  padding: 118px 40px 24px;
+  background-color: #000;
+}
+
+.common-title {
+  padding-top: 18px;
+  padding-bottom: 12px;
+  font-size: 14px;
+  color: #5d6379;
+}
+
+.ant-pagination {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 24px;
+  .ant-pagination-options {
+    margin-left: auto;
+  }
+}
+.common-list-1-box {
+  overflow-y: auto;
+  padding: 24px;
+  max-height: 548px;
+  margin-bottom: 0;
+  h3 {
+    margin-bottom: 0;
+  }
+  .list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: 48px;
+    color: @color-text-a;
+    border: 1px solid #14161a2a;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    cursor: pointer;
+    &.active {
+      background-color: rgba(39, 62, 229, 0.1);
+      border-color: rgba(39, 62, 229, 0.5);
+      .title {
+        color: #273ee5;
+        &::before {
+          background-color: #273ee5;
+        }
+      }
+      .tips {
+        color: #273ee5;
+        .number {
+          color: #273ee5;
+        }
+      }
+    }
+    &:hover {
+      background-color: rgba(22, 26, 42, 0.04);
+      border-color: rgba(22, 26, 42, 0.08);
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .title {
+    position: relative;
+    padding-left: 12px;
+    width: calc(100% - 80px);
+    .ellipsis();
+    .cl-fs-linh(@color-text-a, 16px, 48px);
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 2px;
+      width: 4px;
+      height: 4px;
+      background-color: @color-text-a;
+      transform: translateY(-50%) rotateZ(45deg);
+    }
+  }
+  .tips {
+    .anticon {
+      padding-right: 5px;
+      font-size: 16px;
+    }
+    .number {
+      .cl-fs-linh(@color-text-a, 16px);
+    }
+  }
+}
+.common-list-2-box {
+  margin: 24px 0;
+  .list-item {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    height: 90px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+      background-color: #fff;
+      box-shadow: 0 0 10px 0 #ccc;
+      &::after {
+        opacity: 0;
+      }
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 18px;
+      left: 57px;
+      border: 1px solid #f5f5f5;
+    }
+  }
+  .xh {
+    padding-top: 8px;
+    padding-right: 8px;
+    width: 57px;
+    text-align: right;
+    flex-shrink: 0;
+    align-self: flex-start;
+    .cl-fs-linh(#5d6379, 20px);
+  }
+  .center {
+    padding-top: 10px;
+    width: 100%;
+    flex-grow: 1;
+  }
+  .h {
+    font-size: 16px;
+    color: #161a2a;
+  }
+  .p {
+    padding-top: 5px;
+    font-size: 14px;
+    color: #5d6379;
+  }
+  .tips {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    width: 260px;
+    flex-shrink: 0;
+    align-self: flex-start;
+  }
+  .tips-item {
+    .anticon {
+      font-size: 18px;
+    }
+    .number {
+      padding-left: 5px;
+      .cl-fs-linh(#5d6379, 16px);
+    }
+  }
+}
+.ant-menu-submenu-selected {
+  .ant-menu-submenu-title a {
+    color: #1890ff;
+  }
+}
+.ant-menu-submenu-title a {
+  color: rgba(0, 0, 0, 0.65);
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: #fff;
+}
+.ant-menu-inline .ant-menu-item::after {
+  display: none;
+}
+.ant-menu-inline .ant-menu-item {
+  left: 0;
+}
+.ant-layout-header {
+  height: auto;
+}
+.ant-menu-vertical .ant-menu-item,
+.ant-menu-inline .ant-menu-item,
+.ant-menu-vertical .ant-menu-submenu-title,
+.ant-menu-inline .ant-menu-submenu-title {
+  @h: 40px;
+
+  height: @h;
+  font-size: 16px;
+  line-height: @h;
+  font-family: 'PingFangSC-Medium', sans-serif;
+}
+.ant-menu {
+  padding: 16px 0;
+}
+.ant-menu-submenu-title,
+.ant-menu-item {
+  .iconfont {
+    padding-right: 10px;
+  }
+}
+.ant-menu-submenu-inline > .ant-menu-submenu-title::after {
+  display: none;
+}
+.ant-menu-submenu-selected .ant-menu-submenu-title {
+  color: @primary-color;
+}
+.ant-card-wider-padding .ant-card-head {
+  padding: 0 24px;
+}
+.ant-card-wider-padding .ant-card-body {
+  padding: 24px;
+}
+.ant-card-head {
+  height: 55px;
+  line-height: 55px;
+}
+.ant-size-24 {
+  display: flex;
+  justify-content: flex-start;
+  > div {
+    margin-right: 24px;
+  }
+}

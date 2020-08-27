@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-height: 999999px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,
+body {
+  position: relative;
+  -webkit-text-size-adjust: none; /* iphone手机文字显示兼容 Font Boosting */
+  font-family: 'Microsoft YaHei', 'PingFangSC-Regular', 'Heiti SC', sans-serif;
+}
+body {
+  background: rgba(245, 245, 245, 1);
+}
+fieldset,
+img {
+  border: 0;
+}
+img {
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+input,
+select,
+textarea,
+button {
+  font-size: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  // font-family: $font-family;
+}
+
+select,
+input {
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+sup,
+sub {
+  font-size: 100%;
+}
+
+i {
+  font-style: normal;
+}
+video::-internal-media-controls-download-button {
+  display: none;
+}
+
+video::-webkit-media-controls-enclosure {
+  overflow: hidden;
+}
+
+video::-webkit-media-controls-panel {
+  width: calc(100% + 30px);
+}
+
+input:-webkit-autofill {
+  animation: autofill-fix 1s infinite;
+}
+// ie 下显示框框
+br {
+  font: unset !important;
+  font-family: unset !important;
+}
+
+:focus {
+  outline: none;
+}
+
+/*
+    滚动条
+ */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background-color: #f5f5f5;
+}
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #969696;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}

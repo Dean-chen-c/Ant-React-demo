@@ -1,0 +1,51 @@
+{
+  "name": "create-react-app-antd",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@amap/amap-jsapi-loader": "^0.0.4",
+    "@amap/amap-jsapi-types": "^0.0.4",
+    "@babel/polyfill": "^7.10.4",
+    "@craco/craco": "^5.6.4",
+    "antd": "2.13.11",
+    "axios": "^0.19.2",
+    "core-js": "^3.6.5",
+    "craco-less": "^1.17.0",
+    "echarts": "^4.8.0",
+    "emotion": "^10.0.27",
+    "history": "4.10.1",
+    "http-proxy-middleware": "^1.0.5",
+    "react": "^16.13.1",
+    "react-app-polyfill": "^1.0.6",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1"
+  },
+  "devDependencies": {
+    "stylelint": "^13.6.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      "ie>9",
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "ie>9",
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
